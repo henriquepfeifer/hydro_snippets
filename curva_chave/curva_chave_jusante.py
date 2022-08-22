@@ -306,8 +306,8 @@ vazoes = vazoes[vazoes > 0]
 niveis = niveis.loc[vazoes.index]
 
 # Limpar dados muito divergentes
-x, y = remove_outliers(vazoes, niveis['NIVELBARRAGEM'], threshold=3.5, steps=1)
-#y, x = remove_outliers(niveis['NIVELBARRAGEM'], vazoes, threshold=1.5, steps=20)
+x, y = remove_outliers(vazoes, niveis['NIVELJUSANTE'], threshold=3.5, steps=1)
+#y, x = remove_outliers(niveis['NIVELJUSANTE'], vazoes, threshold=1.5, steps=20)
 x = x.values.flatten()
 y = y.values.flatten()
 
